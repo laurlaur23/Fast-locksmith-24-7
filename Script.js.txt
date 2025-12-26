@@ -1,0 +1,9 @@
+document.getElementById("year").textContent = new Date().getFullYear();
+
+// optional: track button taps (simple console)
+const callBtn = document.getElementById("callBtn");
+const waBtn = document.getElementById("waBtn");
+[callBtn, waBtn].forEach(btn => btn.addEventListener("click", () => {
+  // You can later replace with Google Analytics events.
+  console.log("CTA clicked:", btn.id);
+}));
